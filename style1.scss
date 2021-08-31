@@ -1,5 +1,56 @@
+@import "style.scss";
+h1, h2, h3, p {
+    margin: 0px;
+}
+.img{
+    object-fit: cover;
+}
+html{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.logo{
+    width: 100%;
+    height: 100%;
+}
+.imgheader{
+    background-image:url( images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+    object-fit: cover;
+    height: 300px;
+}
 main{
     background-color: #f6f6f6;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
 }
+.titre{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between ;
+    padding: 15px ;
+    align-items: center;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    border-radius: 20px;
+    background-color: white;
+    flex-wrap: nowrap;
+    padding:10px;
+        .descript{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-right: 10px;
+        }
+        
+        
+}
+.titremenu{
+            font-weight: lighter;
+        }
+.btn{
+    @extend .btnheader;
+    
+}
+     
