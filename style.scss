@@ -24,6 +24,8 @@ a{
     border: none;
     border-radius: 14px;
     box-shadow: 0 0 8px #0000002e;
+    position: relative;
+    align-items: center;
       i{color: #7e7e7e;
 
       }
@@ -55,6 +57,13 @@ header{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    height: 40px;
+      input{
+        border-radius: 5px;
+        height: 25px;
+        border: 1px;
+        background-color: #eaeaea;
+      }
   }
   header i {
     padding-right: 1.5rem;
@@ -66,17 +75,7 @@ header{
     padding-left: 50px;
     padding-right: 50px;
   }
-  .fonctionnement{
-      display: flex;
-      flex-direction:column;
-      align-items: center;
-        h2{
-          text-align: start;
-        }
-        .filtres{
-          width: 100%;
-        }
-  }
+  
   .btnheader{
     padding: 15px 25px;
     border-radius: 35px;
@@ -86,8 +85,31 @@ header{
     border: none;
     box-shadow: 0 0 16px #0000002e;
     
+    
+    
     }
+.fonctionnement{
+      display: flex;
+      flex-direction:column;
+      align-items: center;
+        h2{
+          text-align: start;
+        }
+        .filtres{
+          width: 100%;
+        }
+        span{
+          background-color: $primaire;
+          position: absolute;
+          padding: 5px 7px;
+          left: -5px;
+          border-radius: 50%;
+          color: white;
+          font-size: small;
 
+
+        }
+  }
  
   .bthead{
     padding-right: 10px;
@@ -115,6 +137,14 @@ header{
     flex-direction: column;
     margin: 20px;
     box-shadow: 0 0 16px #0000002e;
+    position: relative;
+  }
+  .new{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: $Tertiaire;
+    padding: 5px;
   }
   .imgcards{
     border-top-left-radius: 15px;
@@ -144,6 +174,10 @@ header{
       margin-top: 5px;
       padding-left: 10px;
     }
+  }
+  footer{
+    background-color: #353535;
+    color: white;
   }
   
   

@@ -14,7 +14,7 @@ html{
 }
 .imgheader{
     background-image:url( images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
-    object-fit: cover;
+    background-size: cover;
     height: 300px;
 }
 main{
@@ -28,7 +28,9 @@ main{
     justify-content:space-between ;
     padding: 15px ;
     align-items: center;
+    padding-top: 30px;
 }
+
 .cards{
     display: flex;
     flex-direction: column;
@@ -47,12 +49,22 @@ main{
         
 }
 .titremenu{
-            font-weight: lighter;
+    font-weight: lighter;
+    margin-left: 15px;
+        
+        }
+        h2.titremenu::after{
+            content: "";
+            height: 5px;
+            width: 50px;
+            background-color:$Tertiaire;
+            display: block;
+            margin-top:2px
         }
 .btn{
     @extend .btnheader;
     width: 150px;
-    align-items: center;
+    
     
 }
 

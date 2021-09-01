@@ -27,6 +27,10 @@ a {
   border-radius: 14px;
   -webkit-box-shadow: 0 0 8px #0000002e;
           box-shadow: 0 0 8px #0000002e;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .btn i {
@@ -77,6 +81,14 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 40px;
+}
+
+.h3hearder input {
+  border-radius: 5px;
+  height: 25px;
+  border: 1px;
+  background-color: #eaeaea;
 }
 
 header i {
@@ -96,6 +108,18 @@ header i {
           align-items: center;
   padding-left: 50px;
   padding-right: 50px;
+}
+
+.btnheader {
+  padding: 15px 25px;
+  border-radius: 35px;
+  background: #9356dc;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(45%, #9356dc), to(#ff79da));
+  background: linear-gradient(0deg, #9356dc 45%, #ff79da 100%);
+  color: #fff;
+  border: none;
+  -webkit-box-shadow: 0 0 16px #0000002e;
+          box-shadow: 0 0 16px #0000002e;
 }
 
 .fonctionnement {
@@ -119,16 +143,14 @@ header i {
   width: 100%;
 }
 
-.btnheader {
-  padding: 15px 25px;
-  border-radius: 35px;
-  background: #9356dc;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(45%, #9356dc), to(#ff79da));
-  background: linear-gradient(0deg, #9356dc 45%, #ff79da 100%);
-  color: #fff;
-  border: none;
-  -webkit-box-shadow: 0 0 16px #0000002e;
-          box-shadow: 0 0 16px #0000002e;
+.fonctionnement span {
+  background-color: #9356DC;
+  position: absolute;
+  padding: 5px 7px;
+  left: -5px;
+  border-radius: 50%;
+  color: white;
+  font-size: small;
 }
 
 .bthead {
@@ -169,6 +191,15 @@ header i {
   margin: 20px;
   -webkit-box-shadow: 0 0 16px #0000002e;
           box-shadow: 0 0 16px #0000002e;
+  position: relative;
+}
+
+.new {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background-color: #99E2D0;
+  padding: 5px;
 }
 
 .imgcards {
@@ -206,5 +237,10 @@ header i {
   color: black;
   margin-top: 5px;
   padding-left: 10px;
+}
+
+footer {
+  background-color: #353535;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
