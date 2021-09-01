@@ -5,6 +5,7 @@
 a {
   text-decoration: none;
   text-transform: none;
+  color: black;
 }
 
 .btn {
@@ -12,6 +13,8 @@ a {
   width: 100%;
   padding: 20px 35px;
   border-radius: 18PX;
+  font-size: larger;
+  font-weight: bolder;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -19,11 +22,15 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin: 15px;
+  margin-bottom: 15px;
   border: none;
   border-radius: 14px;
   -webkit-box-shadow: 0 0 8px #0000002e;
           box-shadow: 0 0 8px #0000002e;
+}
+
+.btn i {
+  color: #7e7e7e;
 }
 
 .btn:hover {
@@ -104,8 +111,16 @@ header i {
           align-items: center;
 }
 
+.fonctionnement h2 {
+  text-align: start;
+}
+
+.fonctionnement .filtres {
+  width: 100%;
+}
+
 .btnheader {
-  padding: 18px 25px;
+  padding: 15px 25px;
   border-radius: 35px;
   background: #9356dc;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(45%, #9356dc), to(#ff79da));

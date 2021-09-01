@@ -5,6 +5,7 @@
 a {
   text-decoration: none;
   text-transform: none;
+  color: black;
 }
 
 .btn {
@@ -104,8 +105,16 @@ header i {
           align-items: center;
 }
 
+.fonctionnement h2 {
+  text-align: start;
+}
+
+.fonctionnement .filtre {
+  width: 100%;
+}
+
 .btnheader, .btn {
-  padding: 18px 25px;
+  padding: 15px 25px;
   border-radius: 35px;
   background: #9356dc;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(45%, #9356dc), to(#ff79da));
@@ -273,5 +282,12 @@ main {
 
 .titremenu {
   font-weight: lighter;
+}
+
+.btn {
+  width: 150px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=style1.css.map */
