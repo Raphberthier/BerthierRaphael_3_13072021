@@ -136,7 +136,9 @@ header i {
 }
 
 .fonctionnement h2 {
-  text-align: start;
+  -ms-flex-item-align: normal;
+      -ms-grid-row-align: normal;
+      align-self: normal;
 }
 
 .fonctionnement .filtres {
@@ -170,6 +172,7 @@ header i {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #f6f6f6;
+  padding-bottom: 30px;
 }
 
 .Restaurants h2 {
@@ -242,5 +245,12 @@ header i {
 footer {
   background-color: #353535;
   color: white;
+  padding-left: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+footer h3 {
+  font-family: 'Shrikhand', cursif;
 }
 /*# sourceMappingURL=style.css.map */

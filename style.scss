@@ -93,7 +93,7 @@ header{
       flex-direction:column;
       align-items: center;
         h2{
-          text-align: start;
+          align-self: normal;
         }
         .filtres{
           width: 100%;
@@ -121,8 +121,8 @@ header{
   .Restaurants{
     display: flex;
     flex-direction: column;
-    background-color: #f6f6f6
-    ;
+    background-color: #f6f6f6;
+    padding-bottom: 30px;
     h2{
       margin-left: 20px;
       margin-bottom: 0px;
@@ -178,6 +178,14 @@ header{
   footer{
     background-color: #353535;
     color: white;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+      
   }
+ footer h3{
+        font-family : 'Shrikhand', cursif ;
+        
+      }
   
   

@@ -32,25 +32,53 @@ main{
 }
 
 .cards{
-    display: flex;
-    flex-direction: column;
+    
     margin: 15px;
     border-radius: 20px;
     background-color: white;
     flex-wrap: nowrap;
     padding:10px;
+    position: relative;
+    padding-right: 0px;
+    transform: scale(1);
         .descript{
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             margin-right: 10px;
+             
         }
-        
+        &:hover{
+            .descript{
+                width: 84%;
+                transition: 3s;
+            }
+            .chk{
+                transition: 3s;
+                opacity: 1;
+            }
+        }
+.chk{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    background-color:#99e2d0;
+    width: 55px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    opacity: 0;
+    color: white;
+}
         
 }
 .titremenu{
     font-weight: lighter;
     margin-left: 15px;
+    font-size: medium;
         
         }
         h2.titremenu::after{
@@ -67,5 +95,12 @@ main{
     
     
 }
+.btnmain{
+    display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 30px;
+      padding-bottom: 30px;
+  }
 
      
