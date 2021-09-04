@@ -31,6 +31,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 
 .btn i {
@@ -108,6 +109,7 @@ header i {
           align-items: center;
   padding-left: 50px;
   padding-right: 50px;
+  padding-bottom: 60px;
 }
 
 .btnheader {
@@ -120,6 +122,7 @@ header i {
   border: none;
   -webkit-box-shadow: 0 0 16px #0000002e;
           box-shadow: 0 0 16px #0000002e;
+  cursor: pointer;
 }
 
 .fonctionnement {
@@ -133,12 +136,14 @@ header i {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 30px 20px 30px 20px;
+  background-color: #fff;
 }
 
 .fonctionnement h2 {
-  -ms-flex-item-align: normal;
-      -ms-grid-row-align: normal;
-      align-self: normal;
+  -ms-flex-item-align: self-start;
+      -ms-grid-row-align: self-start;
+      align-self: self-start;
 }
 
 .fonctionnement .filtres {
@@ -149,10 +154,10 @@ header i {
   background-color: #9356DC;
   position: absolute;
   padding: 5px 7px;
-  left: -5px;
+  left: -10px;
   border-radius: 50%;
   color: white;
-  font-size: small;
+  font-size: xx-small;
 }
 
 .bthead {
@@ -214,6 +219,7 @@ header i {
 }
 
 .descripcards {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -234,6 +240,44 @@ header i {
 
 .descripcards i:active {
   color: #be64db;
+}
+
+.lesrestaurants .far {
+  font-size: x-large;
+  position: absolute;
+  right: 30px;
+  top: 26px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.lesrestaurants .far:hover {
+  opacity: 0;
+}
+
+.lesrestaurants .far:active {
+  color: #be64db;
+}
+
+.lesrestaurants .fas {
+  color: #be64db;
+  font-size: x-large;
+  opacity: 0;
+  position: absolute;
+  right: 30px;
+  top: 26px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.lesrestaurants .fas:hover {
+  color: #be64db;
+  opacity: 1;
+}
+
+.lesrestaurants .fas:visited {
+  color: #be64db;
+  opacity: 1;
 }
 
 .loc p {
