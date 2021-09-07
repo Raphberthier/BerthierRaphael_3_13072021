@@ -1,4 +1,7 @@
 @import "style.scss";
+
+@import url('https://fonts.googleapis.com/css2? family= Roboto:wght@500 & family= Shrikhand & display=swap'); 
+
 h1, h2, h3, p {
     margin: 0px;
 }
@@ -36,12 +39,12 @@ main{
     margin: 15px;
     border-radius: 20px;
     background-color: white;
-    flex-wrap: nowrap;
     padding:10px;
     position: relative;
     padding-right: 0px;
     transform: scale(1);
         .descript{
+            
             display: flex;
             flex-direction: row;
             justify-content: space-between;
@@ -51,6 +54,20 @@ main{
         }
         &:hover{
             .descript{
+                overflow: hidden;
+             text-overflow: ellipsis;
+                width: 84%;
+                transition: 3s;
+            }
+            .chk{
+                transition: 3s;
+                opacity: 1;
+            }
+        }
+        &:focus{
+            .descript{
+                overflow: hidden;
+             text-overflow: ellipsis;
                 width: 84%;
                 transition: 3s;
             }

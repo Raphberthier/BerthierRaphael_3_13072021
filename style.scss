@@ -1,3 +1,4 @@
+
 *{
   font-family: Roboto, sans-serif;
 }
@@ -11,6 +12,7 @@ a{
   
   
 }
+
 .btn{
     height: 100%;
     width: 100%;
@@ -218,12 +220,16 @@ header{
     color: white;
     padding-left: 20px;
     padding-top: 5px;
-    padding-bottom: 5px;
-      
+    padding-bottom: 25px;
+        p{
+          margin-bottom: 10px;
+        }
   }
- footer h3{
-        font-family : 'Shrikhand', cursif ;
-        
-      }
+  .h2foot{
+    font-family : 'Shrikhand', cursif ;
+     margin-top: 25px;
+     margin-bottom: 25px;
+  }
+
   
   

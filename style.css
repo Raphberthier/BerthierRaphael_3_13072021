@@ -291,10 +291,16 @@ footer {
   color: white;
   padding-left: 20px;
   padding-top: 5px;
-  padding-bottom: 5px;
+  padding-bottom: 25px;
 }
 
-footer h3 {
+footer p {
+  margin-bottom: 10px;
+}
+
+.h2foot {
   font-family: 'Shrikhand', cursif;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 /*# sourceMappingURL=style.css.map */
