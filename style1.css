@@ -304,6 +304,12 @@ footer p {
   margin-bottom: 25px;
 }
 
+.anim {
+  background-color: rgba(100, 148, 237, 0.733);
+  position: fixed;
+  z-index: 2;
+}
+
 h1, h2, h3, p {
   margin: 0px;
 }
