@@ -1,7 +1,5 @@
 @import "style.scss";
 
-@import url('https://fonts.googleapis.com/css2? family= Roboto:wght@500 & family= Shrikhand & display=swap'); 
-
 h1, h2, h3, p {
     margin: 0px;
 }
@@ -14,6 +12,20 @@ html{
 .logo{
     width: 100%;
     height: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.arrow{
+    margin-left: 20px;
+    font-size: larger;
+}
+.imglogo{
+    text-align: center;
+}
+.imglogos{
+    width: 50%;
 }
 .imgheader{
     background-image:url( images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
