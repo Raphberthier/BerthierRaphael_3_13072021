@@ -331,8 +331,8 @@ footer h3 {
   background-color: rgba(160, 160, 160, 0.733);
   position: fixed;
   z-index: 2;
-  -webkit-animation: 0s 3s 1 both linear load;
-          animation: 0s 3s 1 both linear load;
+  -webkit-animation: 0s 1s 1 both linear load;
+          animation: 0s 1s 1 both linear load;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -492,6 +492,7 @@ main {
 }
 
 .cards {
+  overflow: hidden;
   height: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -503,10 +504,6 @@ main {
   border-radius: 20px;
   background-color: white;
   padding-left: 10px;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .cards .descript {
@@ -539,6 +536,11 @@ main {
   height: 60px;
 }
 
+.cards:hover .chk i {
+  -webkit-animation: 0.3s 0.1s 1 both linear check;
+          animation: 0.3s 0.1s 1 both linear check;
+}
+
 .cards .chk {
   overflow: hidden;
   right: 0px;
@@ -560,9 +562,22 @@ main {
   color: white;
 }
 
-.cards .chk i {
-  -webkit-animation: 0.5s 0.5s 1 both linear check;
-          animation: 0.5s 0.5s 1 both linear check;
+.entrees {
+  overflow: hidden;
+  -webkit-animation: 0.4s 0.1s 1 both linear entrees;
+          animation: 0.4s 0.1s 1 both linear entrees;
+}
+
+.menuplats {
+  overflow: hidden;
+  -webkit-animation: 0.4s 0.5s 1 both linear entrees;
+          animation: 0.4s 0.5s 1 both linear entrees;
+}
+
+.desserts {
+  overflow: hidden;
+  -webkit-animation: 0.4s 0.9s 1 both linear entrees;
+          animation: 0.4s 0.9s 1 both linear entrees;
 }
 
 .titremenu {
@@ -608,6 +623,52 @@ h2.titremenu::after {
   font-size: small;
 }
 
+/*animation*/
+@-webkit-keyframes entrees {
+  0% {
+    width: 0%;
+    height: 0%;
+  }
+  25% {
+    width: 25%;
+    height: 25%;
+  }
+  50% {
+    width: 50%;
+    height: 50%;
+  }
+  75% {
+    width: 75%;
+    height: 75%;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+  }
+}
+@keyframes entrees {
+  0% {
+    width: 0%;
+    height: 0%;
+  }
+  25% {
+    width: 25%;
+    height: 25%;
+  }
+  50% {
+    width: 50%;
+    height: 50%;
+  }
+  75% {
+    width: 75%;
+    height: 75%;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+  }
+}
+
 @-webkit-keyframes check {
   from {
     -webkit-transform: rotate(0deg);
@@ -630,6 +691,7 @@ h2.titremenu::after {
   }
 }
 
+/* responsive*/
 @media screen and (min-width: 700px) {
   .lesmenus {
     display: -ms-grid;

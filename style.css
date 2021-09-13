@@ -331,8 +331,8 @@ footer h3 {
   background-color: rgba(160, 160, 160, 0.733);
   position: fixed;
   z-index: 2;
-  -webkit-animation: 0s 3s 1 both linear load;
-          animation: 0s 3s 1 both linear load;
+  -webkit-animation: 0s 1s 1 both linear load;
+          animation: 0s 1s 1 both linear load;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

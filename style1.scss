@@ -44,6 +44,7 @@ main{
 }
 
 .cards{
+    overflow: hidden;
     height: 60px;
     display: flex;
     align-items: center;
@@ -51,9 +52,6 @@ main{
     border-radius: 20px;
     background-color: white;
     padding-left: 10px;
-    transform: scale(1);
-    overflow: hidden;
-  text-overflow: ellipsis;
         .descript{
             flex: 1;
             display: flex;
@@ -71,6 +69,9 @@ main{
                 transition: 0.5s;
                 width: 55px;
                 height: 60px;
+                i{
+                    animation: 0.3s 0.1s 1 both linear check ;
+                }
             }
         }
        
@@ -88,11 +89,22 @@ main{
     border-top-right-radius: 16px;
     border-bottom-right-radius: 16px;
     color: white;
-        i{
-            animation: 0.5s 0.5s 1 both linear check ;
-        }
-}
         
+}
+
+        
+}
+.entrees{
+    overflow: hidden;
+    animation: 0.4s 0.1s 1 both linear entrees;
+}
+.menuplats{
+    overflow: hidden;
+    animation: 0.4s 0.5s 1 both linear entrees;
+}
+.desserts{
+    overflow: hidden;
+    animation: 0.4s 0.9s 1 both linear entrees;
 }
 .titremenu{
     font-weight: lighter;
@@ -130,6 +142,29 @@ main{
       font-size: small;
     }
   }
+  /*animation*/
+  @keyframes entrees {
+    0%{
+        width: 0%;
+        height: 0%;
+    }
+    25%{
+        width: 25%;
+        height: 25%;
+    }
+    50%{
+        width: 50%;
+        height: 50%;
+    }
+    75%{
+        width: 75%;
+        height: 75%;
+    }
+    100%{
+        width: 100%;
+        height: 100%;
+    }
+  }
   @keyframes check {
     from{
         transform: rotate(0deg);
@@ -138,7 +173,7 @@ main{
         transform: rotate(360deg);
       }
   }
-
+/* responsive*/
   @media screen and (min-width: 700px){
       .lesmenus{
         display: grid;
@@ -149,5 +184,6 @@ main{
         flex-direction: column;
         align-items: center;
       }
+      
   }
      
