@@ -218,6 +218,7 @@ header i {
   background-color: #99E2D0;
   padding: 5px;
   border-radius: 3px;
+  color: #33a317e7;
 }
 
 .imgcards {
@@ -308,6 +309,15 @@ footer p {
   margin-bottom: 10px;
 }
 
+footer .foot .fa-utensils {
+  margin-right: 13px;
+}
+
+footer .foot .fa-hands-helping {
+  margin-right: 10px;
+  font-size: small;
+}
+
 footer h3 {
   font-family: 'Shrikhand', cursive;
   font-weight: initial;
@@ -340,8 +350,8 @@ footer h3 {
   border: 10px solid #c7c6c6;
   border-right: 10px solid #9356DC;
   border-radius: 50%;
-  -webkit-animation: 1s 0.5s infinite both linear loader;
-          animation: 1s 0.5s infinite both linear loader;
+  -webkit-animation: 0.5s 0.5s infinite both linear loader;
+          animation: 0.5s 0.5s infinite both linear loader;
 }
 
 /*animation*/
@@ -385,6 +395,34 @@ footer h3 {
     opacity: 0;
     width: 0px;
     height: 0px;
+  }
+}
+
+/*Responsive*/
+@media screen and (min-width: 700px) {
+  .filtres {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 30px;
+  }
+  .lesrestaurants {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -561,6 +599,15 @@ h2.titremenu::after {
   padding-bottom: 30px;
 }
 
+.foot .fa-utensils {
+  margin-right: 13px;
+}
+
+.foot .fa-hands-helping {
+  margin-right: 10px;
+  font-size: small;
+}
+
 @-webkit-keyframes check {
   from {
     -webkit-transform: rotate(0deg);
@@ -580,6 +627,27 @@ h2.titremenu::after {
   to {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .lesmenus {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 /*# sourceMappingURL=style1.css.map */

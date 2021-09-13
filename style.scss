@@ -227,6 +227,15 @@ header{
         p{
           margin-bottom: 10px;
         }
+        .foot{
+          .fa-utensils{
+            margin-right: 13px;
+          }
+          .fa-hands-helping{
+            margin-right: 10px;
+            font-size: small;
+          }
+        }
   }
   footer h3{
     font-family: 'Shrikhand', cursive;
@@ -276,5 +285,21 @@ header{
     height: 0px;
   }
 }
-  
+/*Responsive*/
+
+@media screen and (min-width: 700px){
+  .filtres{
+    display: flex;
+    gap: 30px;
+  }
+  .lesrestaurants{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
   

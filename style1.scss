@@ -121,6 +121,15 @@ main{
       padding-top: 30px;
       padding-bottom: 30px;
   }
+  .foot{
+    .fa-utensils{
+      margin-right: 13px;
+    }
+    .fa-hands-helping{
+      margin-right: 10px;
+      font-size: small;
+    }
+  }
   @keyframes check {
     from{
         transform: rotate(0deg);
@@ -130,4 +139,15 @@ main{
       }
   }
 
+  @media screen and (min-width: 700px){
+      .lesmenus{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+      }
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+  }
      
