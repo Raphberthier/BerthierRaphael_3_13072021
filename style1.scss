@@ -28,11 +28,13 @@ h1, h2, h3, p {
     background-image:url( images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
     background-size: cover;
     height: 300px;
+    
 }
 main{
     background-color: #f6f6f6;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
+    z-index: 999;
 }
 .titre{
     display: flex;
@@ -41,6 +43,7 @@ main{
     padding: 15px ;
     align-items: center;
     padding-top: 30px;
+    margin-top: -20px; 
 }
 
 .cards{
@@ -82,7 +85,6 @@ main{
     top: 0px;
     background-color:#99e2d0;
     width: 0px;
-    height: 0px;
     display: flex;
     align-items: center;
     justify-content: center;
