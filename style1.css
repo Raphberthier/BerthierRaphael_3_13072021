@@ -13,7 +13,7 @@ body {
   height: 100%;
   width: 100%;
   padding: 20px 35px;
-  border-radius: 18PX;
+  border-radius: 18px;
   font-size: larger;
   font-weight: bolder;
   display: -webkit-box;
@@ -41,7 +41,7 @@ body {
     background-color: #e6d2ff; }
 
 header {
-  background-color: #f6f6f6;
+  background-color: #fffefe;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -49,18 +49,20 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-bottom: 25px;
   text-align: center; }
 
 .divlogo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: #fff; }
 
-.logo {
-  width: 40%;
-  height: 60px;
-  -o-object-fit: contain;
-     object-fit: contain;
-  background-color: white; }
+.imglogo {
+  max-width: 250px;
+  width: 50%; }
 
 .h3hearder {
   background-color: #eaeaea;
@@ -139,7 +141,7 @@ header i {
   .fonctionnement .filtres {
     width: 100%; }
   .fonctionnement span {
-    background-color: #9356DC;
+    background-color: #9356dc;
     position: absolute;
     padding: 5px 7px;
     left: -10px;
@@ -186,12 +188,15 @@ header i {
   position: absolute;
   right: 10px;
   top: 10px;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   padding: 5px;
   border-radius: 3px;
-  color: #33a317e7;
-  -webkit-animation: news 0.8s 1s infinite both linear;
-          animation: news 0.8s 1s infinite both linear; }
+  color: #33a317e7; }
+
+.nouveau {
+  margin: 0px;
+  -webkit-animation: news 1.5s 1s infinite both linear;
+          animation: news 1.5s 1s infinite both linear; }
 
 .imgcards {
   border-top-left-radius: 15px;
@@ -216,8 +221,6 @@ header i {
   padding-left: 10px; }
   .descripcards h3 {
     margin-bottom: 0px; }
-  .descripcards i:active {
-    color: #be64db; }
 
 .lesrestaurants .far {
   font-size: x-large;
@@ -253,6 +256,8 @@ footer {
   padding-left: 20px;
   padding-top: 5px;
   padding-bottom: 25px; }
+  footer a {
+    color: #fff; }
   footer p {
     margin-bottom: 10px; }
   footer .foot .fa-utensils {
@@ -262,7 +267,7 @@ footer {
     font-size: small; }
 
 footer h3 {
-  font-family: 'Shrikhand', cursive;
+  font-family: "Shrikhand", cursive;
   font-weight: initial;
   margin-top: 25px;
   margin-bottom: 25px;
@@ -290,7 +295,7 @@ footer h3 {
   width: 100px;
   height: 100px;
   border: 10px solid #fffefe;
-  border-right: 10px solid #9356DC;
+  border-right: 10px solid #9356dc;
   border-radius: 50%;
   -webkit-animation: 0.5s 0.5s infinite both linear loader;
           animation: 0.5s 0.5s infinite both linear loader; }
@@ -349,8 +354,8 @@ footer h3 {
   .lesrestaurants {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: (auto)[2];
+        grid-template-columns: repeat(2, auto);
     margin: 0rem; }
   footer {
     display: -webkit-box;
@@ -364,34 +369,37 @@ footer h3 {
         -ms-flex-align: center;
             align-items: center; } }
 
-h1, h2, h3, p {
-  margin: 0px; }
+h1,
+h2,
+h3,
+p {
+  margin: 0px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
 
 .img {
   -o-object-fit: cover;
      object-fit: cover; }
 
+.arrow {
+  margin-right: 60px;
+  font-size: larger; }
+
+.imglogos {
+  max-width: 250px; }
+
 .logo {
-  width: 100%;
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 20px;
-  margin-bottom: 20px; }
-
-.arrow {
-  margin-left: 20px;
-  font-size: larger; }
-
-.imglogo {
-  text-align: center; }
-
-.imglogos {
-  width: 50%; }
+  height: 60px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  background-color: white; }
 
 .imgheader {
   background-image: url(images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
@@ -420,10 +428,12 @@ main {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 30px;
-  margin-top: -20px; }
+  margin-top: -35px; }
 
 .cards {
   overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   height: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -436,6 +446,9 @@ main {
   background-color: white;
   padding-left: 10px; }
   .cards .descript {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
@@ -503,7 +516,7 @@ h2.titremenu::after {
   content: "";
   height: 5px;
   width: 50px;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   display: block;
   margin-top: 2px; }
 
@@ -523,6 +536,9 @@ h2.titremenu::after {
           align-items: center;
   padding-top: 30px;
   padding-bottom: 30px; }
+
+.foot a {
+  color: #fff; }
 
 .foot .fa-utensils {
   margin-right: 13px; }
@@ -586,8 +602,8 @@ h2.titremenu::after {
   .lesmenus {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr); }
+    -ms-grid-columns: (auto)[3];
+        grid-template-columns: repeat(3, auto); }
   footer {
     display: -webkit-box;
     display: -ms-flexbox;
