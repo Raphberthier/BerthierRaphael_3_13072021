@@ -1,5 +1,6 @@
 @import "style.scss";
 
+
 h1,
 h2,
 h3,
@@ -14,14 +15,17 @@ p {
 }
 
 .arrow {
-  margin-right: 60px;
+  position: absolute;
+  left: 15px;
   font-size: larger;
 }
 .imglogos {
   max-width: 250px;
 }
 .logo {
+  position: relative;
     display: flex;
+    justify-content: center;
     align-items: center;
     height: 60px;
     object-fit: contain;
@@ -59,6 +63,7 @@ main {
   border-radius: 20px;
   background-color: white;
   padding-left: 10px;
+  
   .descript {
     overflow: hidden;
     text-overflow: ellipsis;
@@ -99,6 +104,7 @@ main {
     color: white;
   }
 }
+/*
 .entrees {
   overflow: hidden;
   animation: 0.4s 0.1s 1 both linear entrees;
@@ -110,7 +116,7 @@ main {
 .desserts {
   overflow: hidden;
   animation: 0.4s 0.9s 1 both linear entrees;
-}
+}*/
 .titremenu {
   font-weight: lighter;
   margin-left: 15px;
@@ -148,25 +154,18 @@ h2.titremenu::after {
   }
 }
 /*animation*/
+
 @keyframes entrees {
   0% {
     width: 0%;
     height: 0%;
   }
-  25% {
-    width: 25%;
-    height: 25%;
-  }
   50% {
     width: 50%;
     height: 50%;
   }
-  75% {
-    width: 75%;
-    height: 75%;
-  }
   100% {
-    width: 100%;
+    width: 91%;
     height: 100%;
   }
 }
@@ -178,8 +177,16 @@ h2.titremenu::after {
     transform: rotate(360deg);
   }
 }
+$card-delay: 0.2s;
+@for $i from 1 through 10 {
+  .fade-#{$i} {
+    animation: entrees 0.4s $card-delay * $i both linear ;
+    
+  }
+}
 /* responsive*/
 @media screen and (min-width: 700px) {
+  
   .lesmenus {
     display: grid;
     grid-template-columns: repeat(3, auto);
@@ -190,3 +197,11 @@ h2.titremenu::after {
     align-items: center;
   }
 }
+@media screen and (min-width: 700px ) and (max-width:1113px){
+  html{
+    width: fit-content;
+    
+  }
+}
+
+

@@ -345,7 +345,8 @@ p {
 }
 
 .arrow {
-  margin-right: 60px;
+  position: absolute;
+  left: 15px;
   font-size: larger;
 }
 
@@ -354,7 +355,9 @@ p {
 }
 
 .logo {
+  position: relative;
   display: flex;
+  justify-content: center;
   align-items: center;
   height: 60px;
   object-fit: contain;
@@ -439,21 +442,19 @@ main {
   color: white;
 }
 
+/*
 .entrees {
   overflow: hidden;
   animation: 0.4s 0.1s 1 both linear entrees;
 }
-
 .menuplats {
   overflow: hidden;
   animation: 0.4s 0.5s 1 both linear entrees;
 }
-
 .desserts {
   overflow: hidden;
   animation: 0.4s 0.9s 1 both linear entrees;
-}
-
+}*/
 .titremenu {
   font-weight: lighter;
   margin-left: 15px;
@@ -500,20 +501,12 @@ h2.titremenu::after {
     width: 0%;
     height: 0%;
   }
-  25% {
-    width: 25%;
-    height: 25%;
-  }
   50% {
     width: 50%;
     height: 50%;
   }
-  75% {
-    width: 75%;
-    height: 75%;
-  }
   100% {
-    width: 100%;
+    width: 91%;
     height: 100%;
   }
 }
@@ -527,6 +520,46 @@ h2.titremenu::after {
   }
 }
 
+.fade-1 {
+  animation: entrees 0.4s 0.2s both linear;
+}
+
+.fade-2 {
+  animation: entrees 0.4s 0.4s both linear;
+}
+
+.fade-3 {
+  animation: entrees 0.4s 0.6s both linear;
+}
+
+.fade-4 {
+  animation: entrees 0.4s 0.8s both linear;
+}
+
+.fade-5 {
+  animation: entrees 0.4s 1s both linear;
+}
+
+.fade-6 {
+  animation: entrees 0.4s 1.2s both linear;
+}
+
+.fade-7 {
+  animation: entrees 0.4s 1.4s both linear;
+}
+
+.fade-8 {
+  animation: entrees 0.4s 1.6s both linear;
+}
+
+.fade-9 {
+  animation: entrees 0.4s 1.8s both linear;
+}
+
+.fade-10 {
+  animation: entrees 0.4s 2s both linear;
+}
+
 /* responsive*/
 @media screen and (min-width: 700px) {
   .lesmenus {
@@ -537,5 +570,11 @@ h2.titremenu::after {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1113px) {
+  html {
+    width: fit-content;
   }
 }
