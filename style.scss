@@ -193,7 +193,8 @@ header i {
   top: 26px;
   transition: 0.4s;
   &:hover {
-    color: #be64db;
+    color:linear-gradient(0deg, rgba(255,121,218,1) 19%, rgba(147,86,220,1) 65%) ;
+    /*color: #be64db;*/
     opacity: 1;
   }
 }

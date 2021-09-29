@@ -218,7 +218,8 @@ header i {
 }
 
 .lesrestaurants .fas:hover {
-  color: #be64db;
+  color: linear-gradient(0deg, #ff79da 19%, #9356dc 65%);
+  /*color: #be64db;*/
   opacity: 1;
 }
 
