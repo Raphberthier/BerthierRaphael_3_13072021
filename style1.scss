@@ -70,8 +70,9 @@ main {
     white-space: nowrap;
     flex: 1;
     display: flex;
+    justify-content: center;
     flex-direction: column;
-    height: 50px;
+    height: 60px;
   } 
   .euros {
     margin-right: 20px;
@@ -104,19 +105,7 @@ main {
     color: white;
   }
 }
-/*
-.entrees {
-  overflow: hidden;
-  animation: 0.4s 0.1s 1 both linear entrees;
-}
-.menuplats {
-  overflow: hidden;
-  animation: 0.4s 0.5s 1 both linear entrees;
-}
-.desserts {
-  overflow: hidden;
-  animation: 0.4s 0.9s 1 both linear entrees;
-}*/
+
 .titremenu {
   font-weight: lighter;
   margin-left: 15px;
@@ -157,8 +146,9 @@ h2.titremenu::after {
 
 @keyframes entrees {
   0% {
-    width: 0%;
-    height: 0%;
+    width: 0;
+    height: 0;
+    opacity: 0;
   }
   50% {
     width: 50%;
@@ -188,8 +178,17 @@ $card-delay: 0.2s;
 @media screen and (min-width: 700px) {
   
   .lesmenus {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
+    display: flex;
+  }
+  .entrees{
+    width: 33%;
+  }
+  .plats {
+    width: 33%;
+  }
+  
+  .desserts {
+    width: 33%;
   }
   footer {
     display: flex;

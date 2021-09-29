@@ -39,6 +39,14 @@ body {
   background-color: #e6d2ff;
 }
 
+.btn:hover .bthead {
+  color: #9356dc;
+}
+
+.bthead {
+  transition: 0.5s;
+}
+
 header {
   background-color: #fffefe;
   display: flex;
@@ -50,6 +58,8 @@ header {
   display: flex;
   justify-content: center;
   background-color: #fff;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .imglogo {
@@ -64,6 +74,7 @@ header {
   align-items: center;
   justify-content: center;
   height: 40px;
+  margin-top: 0;
 }
 
 .h3hearder input {
@@ -71,6 +82,11 @@ header {
   height: 25px;
   border: 1px;
   background-color: #eaeaea;
+}
+
+.h3hearder ::placeholder {
+  font-size: 15px;
+  color: black;
 }
 
 header i {
@@ -84,6 +100,7 @@ header i {
   padding-left: 50px;
   padding-right: 50px;
   padding-bottom: 60px;
+  background-color: #f6f6f6;
 }
 
 .btnheader, .btn {
@@ -130,10 +147,6 @@ header i {
 
 .bthead {
   padding-right: 10px;
-}
-
-.bthead:hover {
-  color: #9356dc;
 }
 
 .Restaurants {
@@ -200,11 +213,7 @@ header i {
   position: absolute;
   right: 30px;
   top: 26px;
-  transition: 0.4s;
-}
-
-.lesrestaurants .far:hover {
-  opacity: 0;
+  transition: 0.2s;
 }
 
 .lesrestaurants .fas {
@@ -214,12 +223,15 @@ header i {
   position: absolute;
   right: 30px;
   top: 26px;
-  transition: 0.4s;
+  transition: 0.5s;
 }
 
-.lesrestaurants .fas:hover {
-  color: #be64db;
+.coeur:hover .fas {
   opacity: 1;
+}
+
+.coeur:hover .far {
+  opacity: 0;
 }
 
 .loc p {
@@ -406,8 +418,9 @@ main {
   white-space: nowrap;
   flex: 1;
   display: flex;
+  justify-content: center;
   flex-direction: column;
-  height: 50px;
+  height: 60px;
 }
 
 .cards .euros {
@@ -442,19 +455,6 @@ main {
   color: white;
 }
 
-/*
-.entrees {
-  overflow: hidden;
-  animation: 0.4s 0.1s 1 both linear entrees;
-}
-.menuplats {
-  overflow: hidden;
-  animation: 0.4s 0.5s 1 both linear entrees;
-}
-.desserts {
-  overflow: hidden;
-  animation: 0.4s 0.9s 1 both linear entrees;
-}*/
 .titremenu {
   font-weight: lighter;
   margin-left: 15px;
@@ -498,8 +498,9 @@ h2.titremenu::after {
 /*animation*/
 @keyframes entrees {
   0% {
-    width: 0%;
-    height: 0%;
+    width: 0;
+    height: 0;
+    opacity: 0;
   }
   50% {
     width: 50%;
@@ -563,8 +564,16 @@ h2.titremenu::after {
 /* responsive*/
 @media screen and (min-width: 700px) {
   .lesmenus {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
+    display: flex;
+  }
+  .entrees {
+    width: 33%;
+  }
+  .plats {
+    width: 33%;
+  }
+  .desserts {
+    width: 33%;
   }
   footer {
     display: flex;
