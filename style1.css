@@ -1,4 +1,4 @@
-* {
+main, header, p {
   font-family: Roboto, sans-serif;
 }
 
@@ -21,7 +21,7 @@ body {
   font-weight: bolder;
   display: flex;
   flex-direction: row;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
   border: none;
   border-radius: 14px;
   box-shadow: 0 0 8px #0000002e;
@@ -179,12 +179,15 @@ header i {
   background-color: #99e2d0;
   padding: 5px;
   border-radius: 3px;
-  color: #33a317e7;
+  color: #008766;
 }
 
 .nouveau {
   margin: 0px;
   animation: news 1.5s 1s infinite both linear;
+  padding-right: 5px;
+  padding-left: 5px;
+  font-weight: 600;
 }
 
 .imgcards {
@@ -325,7 +328,7 @@ footer h3 {
 }
 
 /*Responsive*/
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 700px) and (max-width: 1397px) {
   .filtres {
     display: flex;
     gap: 30px;
@@ -339,6 +342,16 @@ footer h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+}
+
+@media screen and (min-width: 1397px) {
+  .lesrestaurants {
+    display: flex;
+    flex-direction: row;
+  }
+  a {
+    width: 33%;
   }
 }
 
@@ -582,8 +595,21 @@ h2.titremenu::after {
   }
 }
 
-@media screen and (min-width: 700px) and (max-width: 1113px) {
-  html {
-    width: fit-content;
+@media screen and (min-width: 760px) and (max-width: 1224px) {
+  .filtres {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1224px) {
+  main {
+    margin: 0px 50px 0px 50px;
+  }
+  body {
+    background-image: url(images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+    background-size: cover;
+  }
+  .imgheader {
+    background-image: none;
   }
 }

@@ -196,11 +196,24 @@ $card-delay: 0.2s;
     align-items: center;
   }
 }
-@media screen and (min-width: 700px ) and (max-width:1113px){
-  html{
-    width: fit-content;
-    
+@media screen and (min-width: 760px) and (max-width:1224px){
+  .filtres{
+    display: block;
+  }
+
+}
+@media screen and (min-width:1224px){
+  main{
+    margin: 0px 50px 0px 50px;
+  }
+  body{
+    background-image: url(images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+    background-size: cover;
+  }
+  .imgheader{
+    background-image: none;
   }
 }
+
 
 

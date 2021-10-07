@@ -301,7 +301,7 @@ footer h3 {
 }
 /*Responsive*/
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 700px) and (max-width:1397px) {
   .filtres {
     display: flex;
     gap: 30px;
@@ -317,3 +317,12 @@ footer h3 {
     align-items: center;
   }
 }
+ @media screen and (min-width:1397px){
+   .lesrestaurants{
+     display:flex;
+     flex-direction:row;
+   }
+   a{
+     width: 33%;
+   }
+ }
