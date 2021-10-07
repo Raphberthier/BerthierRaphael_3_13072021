@@ -179,6 +179,28 @@ $card-delay: 0.2s;
   
   .lesmenus {
     display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+  }
+  .entrees{
+      width: 50%;
+  }
+ .plats{
+    width: 45%;
+ }
+ .desserts{
+   width: 100%;
+ }
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (min-width:1092px){
+  .lesmenus {
+    display: flex;
+   
   }
   .entrees{
     width: 33%;
@@ -188,21 +210,16 @@ $card-delay: 0.2s;
   }
   
   .desserts {
-    width: 33%;
+    width: 33%; 
   }
+  
   footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
 }
-@media screen and (min-width: 760px) and (max-width:1224px){
-  .filtres{
-    display: block;
-  }
-
 }
-@media screen and (min-width:1224px){
+@media screen and (min-width:1092px){
   main{
     margin: 0px 50px 0px 50px;
   }
@@ -214,6 +231,3 @@ $card-delay: 0.2s;
     background-image: none;
   }
 }
-
-
-

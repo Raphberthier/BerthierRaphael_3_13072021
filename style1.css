@@ -578,6 +578,28 @@ h2.titremenu::after {
 @media screen and (min-width: 700px) {
   .lesmenus {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .entrees {
+    width: 50%;
+  }
+  .plats {
+    width: 45%;
+  }
+  .desserts {
+    width: 100%;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1092px) {
+  .lesmenus {
+    display: flex;
   }
   .entrees {
     width: 33%;
@@ -595,13 +617,7 @@ h2.titremenu::after {
   }
 }
 
-@media screen and (min-width: 760px) and (max-width: 1224px) {
-  .filtres {
-    display: block;
-  }
-}
-
-@media screen and (min-width: 1224px) {
+@media screen and (min-width: 1092px) {
   main {
     margin: 0px 50px 0px 50px;
   }
